@@ -1,28 +1,28 @@
 class Lmon < Formula
   desc "Minimal terminal monitor: ping, load average, memory, CPU temperature"
   homepage "https://github.com/martiyanov/lmon"
-  version "1.31.0"
+  version "1.32.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/martiyanov/lmon/releases/download/v1.31.0/lmon_darwin_amd64.tar.gz"
-      sha256 "7a0a7f691f789c64ef021910634618eefc40f15ff216d7f016733a96199a8423"
+      url "https://github.com/martiyanov/lmon/releases/download/v1.32.0/lmon_darwin_amd64.tar.gz"
+      sha256 "82f43cdfb60f6d6f1bd0dfb185836ff8ea8ea945b069e23cc855864611fac4a6"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/martiyanov/lmon/releases/download/v1.31.0/lmon_darwin_arm64.tar.gz"
-      sha256 "0a4d8992bfde03252ea6971698d9a756100e9376aad6db4ca84642d71c4f0d7e"
+      url "https://github.com/martiyanov/lmon/releases/download/v1.32.0/lmon_darwin_arm64.tar.gz"
+      sha256 "3d44094386d39bdbff558ff83d2f91d5d92c5f743e01ecef9606fd2331a9100d"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/martiyanov/lmon/releases/download/v1.31.0/lmon_linux_amd64.tar.gz"
-      sha256 "f158f74a2e727d59cccf68ddd29a918e07bda89b4c3958e74b272e2ed1847f6a"
+      url "https://github.com/martiyanov/lmon/releases/download/v1.32.0/lmon_linux_amd64.tar.gz"
+      sha256 "cddf22270e0fe1af08d7d6721aecf32452ac6b460acacc66d5f9190371ca4454"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/martiyanov/lmon/releases/download/v1.31.0/lmon_linux_arm64.tar.gz"
-      sha256 "52709136a0ab4cab8c9f9396fdbbcc33674fb6d61d54c165f031d623ee44ba93"
+      url "https://github.com/martiyanov/lmon/releases/download/v1.32.0/lmon_linux_arm64.tar.gz"
+      sha256 "b9eb89bc7e0a299b7553736eb679835bfb476d574e1df0fe42fe34e76ccade4f"
     end
   end
 
